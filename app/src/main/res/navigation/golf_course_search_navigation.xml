@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/golf_course_home_navigation"
+    app:startDestination="@id/golfCourseSearchFragment">
+
+
+    <fragment
+        tools:layout="@layout/fragment_search_golf_course"
+        android:id="@+id/golfCourseSearchFragment"
+        android:name="com.golfcourse.finderapp.search.fragments.FragmentSearchGolfCourse"
+        android:label="FragmentSearchGolfCourse" />
+
+</navigation>

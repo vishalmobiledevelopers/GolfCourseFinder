@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   >
+
+    <RelativeLayout
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerVertical="true"
+
+                android:layout_gravity="center_vertical"
+                android:id="@+id/ivBack"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_back"
+                />
+
+            <LinearLayout
+                android:layout_toEndOf="@+id/ivBack"
+                android:id="@+id/llHeaderSearch"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toStartOf="@+id/txtSearch"
+                android:background="@drawable/rounded_search_border"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/edtSearch"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:background="@null"
+                    android:imeOptions="actionDone"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:drawableStart="@drawable/ic_search"
+                    android:hint="@string/search"
+
+                    android:singleLine="true"
+                    android:textColorHint="@color/hinttextcolor"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtSearch"
+                android:text="@string/search"
+                android:textColor="@color/hinttextcolor"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:padding="@dimen/_5sdp"
+              />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/rlHeader"
+            android:background="@drawable/rounded_card_white"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/llNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/llRecentSearches"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/recent_searches"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/rlClear"
+                            android:layout_alignParentEnd="true"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/clear"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvRecentSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

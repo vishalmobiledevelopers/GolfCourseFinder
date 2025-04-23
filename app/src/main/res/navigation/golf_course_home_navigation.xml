@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/golf_course_home_navigation"
+    app:startDestination="@id/golfCourseListFragment">
+
+    <fragment
+        tools:layout="@layout/fragment_golf_course_list"
+        android:id="@+id/golfCourseListFragment"
+        android:name="com.golfcourse.finderapp.home.fragments.GolfCourseListFragment"
+        android:label="GolfCourseListFragment" >
+        <action
+            android:id="@+id/action_golfCourseListFragment_to_fragmentSearchGolfCourse"
+            app:destination="@id/fragmentSearchGolfCourse" />
+        <action
+            android:id="@+id/action_golfCourseListFragment_to_golfCourseDetailFragment"
+            app:destination="@id/golfCourseDetailFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_search_golf_course"
+        android:id="@+id/fragmentSearchGolfCourse"
+        android:name="com.golfcourse.finderapp.search.fragments.FragmentSearchGolfCourse"
+        android:label="FragmentSearchGolfCourse" />
+    <fragment
+        tools:layout="@layout/fragment_golf_course_detail"
+        android:id="@+id/golfCourseDetailFragment"
+        android:name="com.golfcourse.finderapp.home.fragments.GolfCourseDetailFragment"
+        android:label="GolfCourseDetailFragment" />
+
+</navigation>

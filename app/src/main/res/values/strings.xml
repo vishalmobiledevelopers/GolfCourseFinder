@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Golf Course Finder App</string>
+
+
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="network_failure">Network Failure</string>
+    <string name="conversion_error">Something went wrong</string>
+    <string name="no_course_found">No Course Found</string>
+    <string name="no_google_map">Google Maps app is not installed</string>
+    <string name="no_search">No Search</string>
+
+    <string name="search">Search</string>
+    <string name="no_data_found">No Product Found</string>
+    <string name="course_name">Course Name</string>
+    <string name="club_name">Club Name</string>
+
+    <string name="recent_searches">Recent Searches</string>
+    <string name="clear">CLEAR</string>
+    <string name="rating">Rating</string>
+    <string name="address">Address</string>
+    <string name="no_rating">No Rating</string>
+
+</resources>
