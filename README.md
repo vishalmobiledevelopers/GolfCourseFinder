@@ -15,7 +15,4 @@ app->src->main->java->com->golfcourse->finderapp->network->RetrofitClient-> Line
 change this token with your new api key now run it .
 
 
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
